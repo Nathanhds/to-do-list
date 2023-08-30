@@ -1,0 +1,27 @@
+<%- include('../layouts/header', {title : 'Nova tarefa'}) %>
+
+<%- include('../layouts/menu') %>
+
+<section class="section">
+      <h1 class="title">Nova Tarefa</h1>
+
+      <form method="post" action="/checklists/<%= checklistId %>/tasks">
+        <div class="field">
+          <label class="label">Nome</label>
+          <div class="control">
+            <input class="input" type="text" name="task[name]" placeholder="Lista de Tarefas" value="<%= task.name %>">
+            <% if(task.error && task.error.hasOwnProperty('name')) { %>
+	          <p class="is-danger help"><%= task.error.name.message %></p>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" class="button is-success">Salvar</button>
+          <button class="button is-danger" type="button"><a href="/checklists/<%= checklistId %>" class="is-danger">Cancelar</a></button>
+        </div>
+      </form>
+
+  </section>
+
+<%- include('../layouts/footer') %>
