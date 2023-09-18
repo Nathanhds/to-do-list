@@ -8,7 +8,6 @@
           <a href="/checklists/new" class="button is-success">Nova Lista</a>
     </div>
     
-    <div class="tasks">
       <div class="columns">
         <% checklists.forEach(checklist => { %>
         <div class="column">
@@ -23,26 +22,19 @@
             </div>
             <footer class="card-footer">
               <p class="card-footer-item">
-                <span>
-                  <a href="/checklists/<%= checklist._id %>">Ver</a>
-                </span>
+                  <a href="/checklists/<%= checklist._id %>" class="linkBtn">Ver</a>
               </p>
               <p class="card-footer-item">
-                <span>
-                  <a href="/checklists/<%= checklist.id %>/edit">Editar</a>
-                </span>
+                  <a href="/checklists/<%= checklist.id %>/edit" class="linkBtn">Editar</a>
               </p>
               <p class="card-footer-item">
-                <span>
-                  <a href="/checklists/<%= checklist.id %>?_method=delete" class="has-text-danger">Remover</a>
-                </span>
+                  <a href="/checklists/<%= checklist.id %>?_method=delete" class="has-text-danger">Remover<a>
               </p>
             </footer>
           </div>
         </div>
         <% }) %>
       </div>
-    </div>
   </section>
 
 <%- include('../layouts/footer') %>

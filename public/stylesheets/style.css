@@ -73,7 +73,6 @@ body {
   display: block;
   background-color: #f5f5f5;
   padding: 1rem;
-  box-shadow: 10px 10px 64px -57px rgba(0, 0, 0, 0.75);
 }
 
 .card {
@@ -103,6 +102,10 @@ body {
   flex-shrink: 0;
   justify-content: center;
   padding: 0.75rem;
+}
+
+.linkBtn {
+   color: blue;
 }
 
 .has-text-danger {
@@ -178,19 +181,156 @@ body {
 }
 
 @media (max-width: 480px) {
-   .title, .subtitle {
-      font-size: 1rem
+   .taskName {
+      font-size: 1rem;
+   }
+   .title {
+      font-size: 1.25rem
+   }
+   .subtitle {
+      font-size: 1rem;
    }
    .column {
       width: 100%;
+   }
+   .button {
+      padding: 0.5rem;
+   }
+   .card-footer-item{
+      padding: 0.5rem;
+   }
+   .columns {
+      gap: 0.5rem;
    }
 }
 
-@media (min-width: 481px) and (max-width:767px) {
-   .title, .subtitle {
+@media (min-width: 481px) and (max-width:625px) {
+   .taskName {
+      font-size: 1rem;
+   }
+   .title {
       font-size: 1.5rem
+   }
+   .subtitle {
+      font-size: 1rem;
    }
    .column {
       width: 100%;
+   }
+   .columns {
+      gap: 0.5rem;
+   }
+}
+
+@media (min-width: 626px) and (max-width:767px) {
+   .taskName {
+      font-size: 1rem;
+   }
+   .title {
+      font-size: 1.5rem
+   }
+   .subtitle {
+      font-size: 1rem;
+   }
+   .column {
+      width: 48%;
+   }
+   .columns {
+      gap: 0.5rem;
+   }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+   .taskName {
+      font-size: 1.25rem;
+   }
+   .title {
+      font-size: 1.75rem
+   }
+   .subtitle {
+      font-size: 1.25rem;
+   }
+   .column {
+      width: 48%;
+   }
+   .columns {
+      gap: 1rem 0.5rem;
+
+   }
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+   .taskName {
+      font-size: 1.25rem;
+   }
+   .title {
+      font-size: 1.75rem
+   }
+   .subtitle {
+      font-size: 1.25rem;
+   }
+   .column {
+      width: 23.6%;
+   }
+   .columns {
+      gap: 0.5rem;
+   }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+   .taskName {
+      font-size: 1.5rem;
+   }
+   .checkbox {
+      width: 1rem;
+      height: 1rem;
+   }
+   .title {
+      font-size: 2rem
+   }
+   .subtitle {
+      font-size: 1.5rem;
+   }
+   .column {
+      width: 24%;
+   }
+   .columns {
+      gap: 0.5rem;
+   }
+   .card-footer-item {
+      font-size: 1.25rem;
+   }
+   .button {
+      padding: 1.25rem;
+      font-size: 1.25rem;
+   }
+}
+
+@media (min-width: 1920px) {
+   .taskName {
+      font-size: 3rem;
+   }
+   .checkbox {
+      width: 2rem;
+      height: 2rem;
+   }
+   .title {
+      font-size: 3rem
+   }
+   .subtitle {
+      font-size: 2rem;
+   }
+   .column {
+      width: 24.5%;
+   }
+   .columns {
+      gap: 0.5rem;
+   }
+   .card-footer-item {
+      font-size: 2rem;
+   }
+   .button {
+      padding: 2rem;
+      font-size: 2rem;
    }
 }

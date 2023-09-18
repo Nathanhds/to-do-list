@@ -1,4 +1,4 @@
-<%- include('../layouts/header', {title : checklist.name}) %> 
+<%- include('../layouts/header', {title : checklist.name}) %>
 <%- include('../layouts/menu') %>
 
 <section class="section">
@@ -18,9 +18,9 @@
       <% checklist.tasks.forEach(task => { %>
       <div class="task">
         <div
-          class="<%= task.done ? 'has-text-success is-italic' : ''%>"
+          class="<%='taskName', task.done ? 'has-text-success is-italic' : ''%>"
         >
-          <input type="checkbox" onchange="setTagAsDone(this,'<%= task._id %>')"
+          <input type="checkbox" class="checkbox" onchange="setTagAsDone(this,'<%= task._id %>')"
           <%= task.done ? 'checked' : '' %> />
           <%= task.name %>
         </div>
