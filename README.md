@@ -25,7 +25,7 @@ Este é um aplicativo de To-Do List simples desenvolvido usando MongoDB, Mongoos
 
 ## Como Instalar
 
-1. Clone este repositório: `git clone https://github.com/seu-usuario/seu-projeto.git`
+1. Clone este repositório: `git clone https://github.com/Nathanhds/to-do-list`
 2. Acesse o diretório do projeto: `cd seu-projeto`
 3. Instale as dependências: `npm install`
 
