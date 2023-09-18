@@ -39,7 +39,5 @@ Este é um aplicativo de To-Do List simples desenvolvido usando MongoDB, Mongoos
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
 
-## Licença
 
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
 
