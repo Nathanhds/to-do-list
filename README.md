@@ -31,7 +31,7 @@ Este é um aplicativo de To-Do List simples desenvolvido usando MongoDB, Mongoos
 
 ## Como Usar
 
-1. Inicie o servidor: `npm start`
+1. Inicie o servidor: `npm run dev`
 2. Acesse o aplicativo em seu navegador: `http://localhost:3000`
 3. Comece a gerenciar suas tarefas.
 
